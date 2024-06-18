@@ -1,13 +1,284 @@
+/*General*/
 body {
+  background-color: black;
+  color: white;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 1px;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+p{
+  text-align: justify;
+}
+#modalPlaneta{
+  text-align: center;
+  top: -280px;
+  position: relative;
+  margin: 0 30%;
+  border: 1px beige solid;
+  border-radius: 2%;
+  padding: 2%;
+}
+#modalPlaneta p{
+  margin-left: 10px;
+}
+#modalPlaneta button{
+  border: 1px beige solid;
+  border-radius: 10%;
+  padding: 1%;
+  background-color: black;
+  color: white;
+  transition: color 0.5s;
+}
+#modalPlaneta button:hover{
+  color:gray;
+}
+#modalPlaneta img{
+  max-width: 40%;
+  height: fit-content;
+  object-fit: cover;
+}
+
+/*La primera parte*/
+#titulo{
+  text-align: center;
+  top: 20px;
+  position: relative;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+#parrafoIntro{
+  top: -220px;
+  margin: 0 20%;
+  position: relative;
+}
+
+/*En general para ambos*/
+#parrafoDerecho,#parrafoIzquierdo{
+  top: -200px;
+  margin: 0 20%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.fila{
+  display: flex;
+  align-content: space-between;
+  align-items: stretch;
+}
+/*para h2 de cada parrafo*/
+#parrafoDerecho,#parrafoIzquierdo h2{
+  position: relative;
+}
+#parrafoDerecho h2{
+  top: -220px;
+  margin: 5% 0;
+}
+#parrafoIzquierdo h2{
+  margin: 5% 0;
+}
+
+/*Para la imagen*/
+#parrafoDerecho img{
+  max-width: 40%;
+  height: fit-content;
+  margin-left: 2%;
+  border-radius: 10%;
+}
+
+#parrafoIzquierdo img{
+  max-width: 40%;
+  height: fit-content;
+  object-fit: cover;
+  margin-right: 2%;
+  border-radius: 10%;
+  margin-top: 2%;
+}
+
+/*Todo el sistema solar del inicio*/
+.sistemaSolar{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: -100px;
+}
+
+.planeta{
+  text-align: center;
+  position: relative;
+  left: -50px;
+  transition: opacity 0.6s;
+}
+.planeta:hover{
+  cursor: pointer;
+  opacity: 0.4;
+  transition-timing-function: ease-out;
+}
+.planeta span{
+  position: relative;
+}
+
+#sol {
+  line-height: 150px;
+  width: 200px;
+  height: 600px;
+  background: url(planetas.png) -0px -0px;
+}
+#mercurio {
+  width: 70px;
+  height: 70px;
+  background: url(planetas.png) -210px -280px;
+}
+
+#venus {
+  width: 80px;
+  height: 80px;
+  background: url(planetas.png) -280px -280px;
+}
+#venus span{
+  top: 80px;
+}
+#latierra {
+  width: 100px;
+  height: 90px;
+  background: url(planetas.png) -360px -280px;
+}
+#latierra span{
+  top: -25px;
+}
+#marte {
+  width: 100px;
+  height: 80px;
+  background: url(planetas.png) -460px -280px;
+}
+#marte span{
+  top: 75px;
+}
+#jupiter {
+  width: 205px;
+  height: 220px;
+  background: url(planetas.png) -560px -200px;
+}
+#jupiter span{
+  top: -10px;
+}
+#saturno {
+  width: 225px;
+  height: 200px;
+  background: url(planetas.png) -760px -220px;
+}
+#saturno span{
+  top: 165px;
+}
+#urano {
+  width: 134px;
+  height: 120px;
+  background: url(planetas.png) -980px -260px;
+}
+#urano span{
+  top: -15px;
+}
+#neptuno {
+  width: 110px;
+  height: 110px;
+  background: url(planetas.png) -1120px -260px;
+}
+#neptuno span{
+  top: 110px;
+}
+
+@media (max-width: 850px){
+  .planeta{
+    margin: 6% 0;
+    left: -20px;
+  }
+  .sistemaSolar{
+    list-style: none;
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    top: 20px;
+  }
+  .fila{
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  #parrafoIzquierdo .fila{
+    flex-direction: column-reverse;
+  }
+  
+  #parrafoDerecho,#parrafoIzquierdo,#parrafoIntro{
+    margin: 0 10%;
+  }
+  #parrafoIntro{
+    margin-top: 5%; 
+  }
+  #parrafoDerecho img{
+    max-width: 100%;
+    height: 150px;
+    margin: 0;
+  }
+  #parrafoIzquierdo img{
+    max-width: 100%;
+    height: 150px;
+    margin: 0;
+  }
+  #sol{
+    transform: rotate(-90deg);
+    transform-origin: center; /* Esto asegura que la rotación se haga desde el centro del elemento */
+  }
+  #neptuno span{
+    top: 50px;
+    left: 90px;
+  }
+  #urano span{
+    top: 50px;
+    left: -90px;
+  }
+  #saturno span{
+    top: 20px;
+    left: 70px;
+  }
+  #marte span{
+    top:25px;
+    left: -70px;
+  }
+  #latierra span{
+    top: 25px;
+    left: 90px;
+  }
+  #venus span{
+    top: 25px;
+    left: -70px;
+  }
+  #mercurio span{
+    top: 70px;
+    left: -5px;
+  }
+  #modalPlaneta{
+    margin: 0 10%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 20px;
+    overflow: auto;
+    background-color: black;
+  }
+  #modalPlaneta img{
+    max-width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
 }

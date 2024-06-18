@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/SistemaSolar/static/css/main.e2fd1d97.css",
+    "main.js": "/SistemaSolar/static/js/main.162b67e4.js",
+    "static/js/453.3541c222.chunk.js": "/SistemaSolar/static/js/453.3541c222.chunk.js",
+    "static/media/planetas.png": "/SistemaSolar/static/media/planetas.d097d54d1a5300c87244.png",
+    "static/media/sol.png": "/SistemaSolar/static/media/sol.b0c3017be2205bef508e.png",
+    "static/media/marte.png": "/SistemaSolar/static/media/marte.a4f263da13821af91d04.png",
+    "static/media/venus.png": "/SistemaSolar/static/media/venus.fafb4598c6c4b578fc2f.png",
+    "static/media/urano.png": "/SistemaSolar/static/media/urano.34b4eb0815109a7cab53.png",
+    "static/media/formacion.jpg": "/SistemaSolar/static/media/formacion.58a67c6ad0840437dce0.jpg",
+    "static/media/saturno.png": "/SistemaSolar/static/media/saturno.c46bb0aed3df19e8f9b8.png",
+    "static/media/mercurio.png": "/SistemaSolar/static/media/mercurio.cf4c8c9b68db8e824808.png",
+    "static/media/astronauta.jpeg": "/SistemaSolar/static/media/astronauta.2625555fca3b253c3746.jpeg",
+    "static/media/jupiter.jpg": "/SistemaSolar/static/media/jupiter.89cc6d0c8af9a82aa92e.jpg",
+    "static/media/neptuno.jpg": "/SistemaSolar/static/media/neptuno.e2e004e43ba7e244e30a.jpg",
+    "index.html": "/SistemaSolar/index.html",
+    "main.e2fd1d97.css.map": "/SistemaSolar/static/css/main.e2fd1d97.css.map",
+    "main.162b67e4.js.map": "/SistemaSolar/static/js/main.162b67e4.js.map",
+    "453.3541c222.chunk.js.map": "/SistemaSolar/static/js/453.3541c222.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2fd1d97.css",
+    "static/js/main.162b67e4.js"
+  ]
+}
